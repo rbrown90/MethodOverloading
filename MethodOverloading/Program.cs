@@ -18,6 +18,8 @@
 
             if (isTrue)
             {
+                sum = num1 + 2;
+
                 response = (sum == 1) ? $"{sum} dollars." : $"{sum} dollar.";
             }
             return response;
@@ -25,8 +27,10 @@
 
         static void Main(string[] args)
         {
-            Console.WriteLine(Add(7, 9));
-            Console.WriteLine(Add(.15m, .20m));
+            Console.WriteLine(Add(4,5, true));
+
+            Console.WriteLine(Add (8, 9, true));
+
             Console.WriteLine(Add(5, 6, true));
 
         }
